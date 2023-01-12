@@ -1,0 +1,10 @@
+*.csv
+*.ipynb_checkpoints/
+*.xml
+*.prj
+*.cpg
+*.shx
+*.shp
+*.zip
+*.dbf
+*_county_data.json
