@@ -14,5 +14,7 @@ It also contains an analysis of that data.
 
 ## Notes
 
+I've excluded the large data files that were taken from the Government services listed above. If it's not clear which ones they are and you'd like to re-run the analysis, let me know.
+
 If there's anything in here that you think is especially interesting, let me know! Or if you've got any questions.
 
