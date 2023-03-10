@@ -12,6 +12,10 @@ It also contains an analysis of that data.
 
 `UrbanRuralProduction.py` is where the bulk of the analysis takes place. In here we plot descriptive statistics, build models and make inferences.
 
+## A cool picture
+
+![Correlation matrix of various features of interest](results/correlation_matrix.png?raw=true "Correlation Matrix of features of interest")
+
 ## Notes
 
 I've excluded the large data files that were taken from the Government services listed above. If it's not clear which ones they are and you'd like to re-run the analysis, let me know.
