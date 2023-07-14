@@ -22,3 +22,12 @@ I've excluded the large data files that were taken from the Government services 
 
 If there's anything in here that you think is especially interesting, let me know! Or if you've got any questions.
 
+## Files to Download
+
+- Population from the 2021 Census: https://www.nomisweb.co.uk/sources/census_2021_bulk (https://www.nomisweb.co.uk/output/census/2021/census2021-ts001.zip)
+- Best fit lookup from the 2021 OAs to Parishes, Counties, Regions and Countries (https://geoportal.statistics.gov.uk/datasets/ons::oas-2021-to-civil-parish-and-non-civil-parished-areas-to-ltla-to-utla-to-region-to-country-may-2022-lookup-in-england-and-wales-1/about)
+- Urban rural lookup of 2011 OAs (https://geoportal.statistics.gov.uk/datasets/rural-urban-classification-2011-of-output-areas-in-england-and-wales-1/about)
+- Lookup between 2011 OAs and 2021 OAs (https://geoportal.statistics.gov.uk/datasets/ons::oa-2011-to-oa-2021-to-local-authority-district-2022-for-england-and-wales-lookup-version-2/about)
+- English indices of multiple deprivation (at 2011 LSOA level) (https://geoportal.statistics.gov.uk/datasets/ons::index-of-multiple-deprivation-dec-2019-lookup-in-england/about)
+- An OA to LSOA lookup for 2011 (https://geoportal.statistics.gov.uk/datasets/ons::output-area-to-lower-layer-super-output-area-to-middle-layer-super-output-area-to-local-authority-district-december-2011-lookup-in-england-and-wales-1/about)
+- Boundary file for all the Output Areas in the UK (https://geoportal.statistics.gov.uk/datasets/ons::output-areas-dec-2021-boundaries-full-clipped-ew-bfc/about)
