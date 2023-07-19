@@ -10,13 +10,17 @@ You could argue it contains too many things. If you're lost, let me try to help 
 
 ## Key Files
 
-`scripts/local_data_downloader.py`: Used to download data from OpenStreetMap. It requires you to set up your own OpenStreetMap server. Points to note include the fact that we begin with a list of every output area in England and the shapefile of those output areas. We then request the bounding box of those shapefiles from OpenStreetMap and extract the amenities. For each amenity, we then check that it lies within an output area (allowing for non-square output areas!). If it is, we append it to a dictionary that ultimately gets written to a JSON file. We write a lot (after each data point) and the file is written in such a way that it can be stopped and restarted and won't request duplicate data
+`scripts/local_data_downloader.py`: Used to download data from OpenStreetMap. It requires you to set up your own OpenStreetMap server. Points to note include the fact that we begin with a list of every output area in England and the shapefile of those output areas. We then request the bounding box of those shapefiles from OpenStreetMap and extract the amenities. For each amenity, we then check that it lies within an output area (allowing for non-square output areas!). If it is, we append it to a dictionary that ultimately gets written to a JSON file. We write a lot (after each data point) and the file is written in such a way that it can be stopped and restarted and won't request duplicate data.
 
 `scripts/data_downloader.py`: As above, except it doesn't require setting up your own server. Howerver, there is a five second delay built it (for politeness). To run completely will take over 10 days.
 
 `analysis_notebooks/HousePriceStats.ipynb` includes a bunch of figures and procedures, and at some point tries to work out the impact of a pub on house sale prices (but not hugely successfully).
 
 `analysis_notebooks/PowerLaws.ipynb` primarily tries to understand whether traditional urbans scaling laws work for rural environments. And mainly concludes that they don't.
+
+`analysis_notebooks/PlottingDiffKernel.ipynb` is all about making big beautiful maps of the UK.
+
+`analysis_notebooks/HousePriceStats.ipynb` generates summary statistics on UK house prices based on the entire house sale history file.
 
 ## A cool picture
 
