@@ -10,7 +10,9 @@ You could argue it contains too many things. If you're lost, let me try to help 
 
 ## Key Files
 
-`data_downloader.py` contains the code used to download data from OpenStreetMap. Points to note include the fact that we begin with a list of every output area in England and the shapefile of those output areas. We then request the bounding box of those shapefiles from OpenStreetMap and extract the amenities. For each amenity, we then check that it lies within an output area (allowing for non-square output areas!). If it is, we append it to a dictionary that ultimately gets written to a JSON file. We write a lot (after each data point) and the file is written in such a way that it can be stopped and restarted and won't request duplicate data. Additionally, there is a five second delay built it (for politeness). To run completely will take over 10 days.
+`scripts/local_data_downloader.py`: Used to download data from OpenStreetMap. It requires you to set up your own OpenStreetMap server. Points to note include the fact that we begin with a list of every output area in England and the shapefile of those output areas. We then request the bounding box of those shapefiles from OpenStreetMap and extract the amenities. For each amenity, we then check that it lies within an output area (allowing for non-square output areas!). If it is, we append it to a dictionary that ultimately gets written to a JSON file. We write a lot (after each data point) and the file is written in such a way that it can be stopped and restarted and won't request duplicate data
+
+`scripts/data_downloader.py`: As above, except it doesn't require setting up your own server. Howerver, there is a five second delay built it (for politeness). To run completely will take over 10 days.
 
 `joiner.py` is responsible for the creation of `joined_population_data.csv`. This is just a simple join between output areas and parishes.
 
