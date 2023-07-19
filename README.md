@@ -14,9 +14,9 @@ You could argue it contains too many things. If you're lost, let me try to help 
 
 `scripts/data_downloader.py`: As above, except it doesn't require setting up your own server. Howerver, there is a five second delay built it (for politeness). To run completely will take over 10 days.
 
-`joiner.py` is responsible for the creation of `joined_population_data.csv`. This is just a simple join between output areas and parishes.
+`analysis_notebooks/HousePriceStats.ipynb` includes a bunch of figures and procedures, and at some point tries to work out the impact of a pub on house sale prices (but not hugely successfully).
 
-`UrbanRuralProduction.py` is where the bulk of the analysis takes place. In here we plot descriptive statistics, build models and make inferences.
+`analysis_notebooks/PowerLaws.ipynb` primarily tries to understand whether traditional urbans scaling laws work for rural environments. And mainly concludes that they don't.
 
 ## A cool picture
 
