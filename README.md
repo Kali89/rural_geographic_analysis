@@ -4,6 +4,10 @@ This repository contains the code for downloading OpenStreetMap data (using the 
 
 It also contains an analysis of that data.
 
+It also contains a presentation of a few of these things for IC2S 2023.
+
+You could argue it contains too many things. If you're lost, let me try to help point you in the right direction...
+
 ## Key Files
 
 `data_downloader.py` contains the code used to download data from OpenStreetMap. Points to note include the fact that we begin with a list of every output area in England and the shapefile of those output areas. We then request the bounding box of those shapefiles from OpenStreetMap and extract the amenities. For each amenity, we then check that it lies within an output area (allowing for non-square output areas!). If it is, we append it to a dictionary that ultimately gets written to a JSON file. We write a lot (after each data point) and the file is written in such a way that it can be stopped and restarted and won't request duplicate data. Additionally, there is a five second delay built it (for politeness). To run completely will take over 10 days.
