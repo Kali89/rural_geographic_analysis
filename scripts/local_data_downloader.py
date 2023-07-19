@@ -7,6 +7,11 @@ from decimal import Decimal
 import concurrent.futures
 import numpy as np
 
+## Set up an OverPass on your own AWS server
+## https://aws.amazon.com/marketplace/pp/prodview-d6c5n6d6qs2c6
+## It's really cheap and speeds everything up so much
+AWS_SERVER = "http://x.x.x.x/api/interpreter"
+
 
 class DecimalEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -37,7 +42,7 @@ region_order_list = drop_wales.groupby(['RGN22NM']).size().sort_values().index.v
 
 def thread_function(region):
     print("Starting with {0}".format(region))
-    api = overpy.Overpass(max_retry_count=5, retry_timeout=10, url="http://3.10.223.96/api/interpreter")
+    api = overpy.Overpass(max_retry_count=5, retry_timeout=10, url=AWS_SERVER)
     frame = drop_wales[drop_wales.RGN22NM == region]
     try:
         with open('output_data/{0}_region_data_updated.json'.format(region), 'r') as f:
